@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    //选择我的图片
+    <item android:state_activated="true" android:drawable="@drawable/wode"/>
+    <item android:state_activated="false" android:drawable="@drawable/wode_normal"/>
+</selector>

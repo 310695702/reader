@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_height="60dp"
+    android:layout_margin="10dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fenlei_cardview"
+        android:layout_marginBottom="4dp"
+        android:layout_margin="4dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:padding="1dp"
+            android:gravity="center"
+            android:id="@+id/fenzu_textview"
+            android:textSize="16sp"
+            android:text="恐怖小说"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

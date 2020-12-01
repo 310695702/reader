@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite">
+    <androidx.cardview.widget.CardView
+        android:layout_alignParentTop="true"
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/back"
+            android:layout_marginLeft="5dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="⬅"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_bookname"
+            android:gravity="center_horizontal"
+            android:textStyle="italic"
+            android:textSize="36dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试书名"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshlayout"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearlayout">
+        <ListView
+            android:id="@+id/shuping_listview"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <EditText
+
+            android:id="@+id/content"
+            android:hint="评论点什么吧~"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/send"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:textSize="24sp"
+            android:text="发表"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>

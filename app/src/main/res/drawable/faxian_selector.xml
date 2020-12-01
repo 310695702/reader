@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    //选择发现图片
+    <item android:state_activated="true" android:drawable="@drawable/faxian" />
+    <item android:state_activated="false" android:drawable="@drawable/faxian_normal"/>
+</selector>

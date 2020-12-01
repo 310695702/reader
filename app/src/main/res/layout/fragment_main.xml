@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/colorwhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.mybook.fragment.MainFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_marginLeft="30sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="科成阅读"
+            android:gravity="center_horizontal"
+            android:textSize="24sp"/>
+        <ImageView
+            android:id="@+id/iv_search"
+            android:src="@drawable/search"
+            android:layout_width="30sp"
+            android:layout_height="30sp"/>
+    </LinearLayout>
+
+    <com.example.mybook.view.StopViewPager
+        android:id="@+id/Viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.example.mybook.view.StopViewPager>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/mainTablayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/tab_bar_bk_selector"
+        app:tabIndicatorColor="@android:color/transparent"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabSelectedTextColor="@color/colorBlue">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/shujia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/shujia_selector"
+            android:text="书架" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/shuku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/fenlei_selector"
+            android:text="书库" />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/faxian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/faxian_selector"
+            android:text="发现" />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/wode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/wode_selector"
+            android:text="我的" />
+    </com.google.android.material.tabs.TabLayout>
+</LinearLayout>
+</FrameLayout>
